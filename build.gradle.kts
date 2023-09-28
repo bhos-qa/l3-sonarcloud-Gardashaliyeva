@@ -32,6 +32,7 @@ tasks.test {
     useJUnitPlatform()
     finalizedBy(jacocoTestReport) // report is always generated after tests run
 }
+
 jacocoTestReport {
     dependsOn(test) // tests are required to run before generating the report
     reports {
