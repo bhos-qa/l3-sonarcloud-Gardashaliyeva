@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.PermissionManagerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-28T10:12:10" hostname="WIN11HP" time="0.038">
-  <properties/>
-  <testcase name="testGetRoleName()" classname="org.example.PermissionManagerTest" time="0.034"/>
-  <testcase name="testSetPermissionLevel()" classname="org.example.PermissionManagerTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
