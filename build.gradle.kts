@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("jacoco")
     id("org.sonarqube") version "4.3.1.3277"
 }
 
@@ -23,6 +24,19 @@ sonar {
   }
 }
 
+jacoco {
+    toolVersion = "0.8.9"
+}
+
 tasks.test {
     useJUnitPlatform()
+    finalizedBy(jacocoTestReport) // report is always generated after tests run
 }
+jacocoTestReport {grad
+    dependsOn(test) // tests are required to run before generating the report
+    reports {
+        xml.required.set(true)
+    }
+}
+
+
