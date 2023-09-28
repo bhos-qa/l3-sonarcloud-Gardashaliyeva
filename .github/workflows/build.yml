@@ -14,10 +14,10 @@ jobs:
         name: checkout the repository
         with:
           fetch-depth: 0
-      - name: Set up JDK 17
+      - name: Set up JDK 19
         uses: actions/setup-java@v3
         with:
-          java-version: 17
+          java-version: 19
           distribution: 'temurin'
       - name: Test and generate coverage report
         run: ./gradlew test
