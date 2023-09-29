@@ -1,17 +1,13 @@
 package org.example;
 
 public class PermissionManager {
-    private PermissionLevel mCurrentLevel;
+    private PermissionLevel mCurrentLevel = PermissionLevel.USER;
 
-    PermissionManager() {
-        mCurrentLevel = PermissionLevel.USER;
+    public PermissionLevel getCurrentLevel() {
+        return mCurrentLevel;
     }
 
-    public String getCurrentRoleName() {
-        return mCurrentLevel.name();
-    }
-
-    public void setPermissionLevel(PermissionLevel level) {
-        mCurrentLevel = level;
+    public void setCurrentLevel(PermissionLevel level) {
+        this.mCurrentLevel = level;
     }
 }
