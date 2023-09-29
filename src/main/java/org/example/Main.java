@@ -2,16 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        // Create an instance of PermissionManager
-        PermissionManager manager = new PermissionManager();
+        System.out.printf("Hello and welcome!");
 
-        // Display the current permission level
-        System.out.println("Current Permission Level: " + manager.getCurrentPermissionLevel());
+        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+        for (int i = 1; i <= 5; i++) {
 
-        // Set a new permission level (e.g., ADMIN)
-        manager.setPermissionLevel(PermissionLevel.ADMIN);
-
-        // Display the current role name
-        System.out.println("Current Role Name: " + manager.getCurrentRoleName());
+            // Press Shift+F9 to start debugging your code. We have set one breakpoint
+            // for you, but you can always add more by pressing Ctrl+F8.
+            System.out.println("i = " + i);
+        }
     }
 }
